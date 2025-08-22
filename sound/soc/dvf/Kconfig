@@ -1,0 +1,8 @@
+config SND_DVF_DBMD2_PCM
+	bool "DSPG DBMD2 Capture Device"
+	default n
+	depends on SND_SOC_DBMD2
+	help
+	  This is Sound Card emulation for DSPG DBMD2 Voice Trigger. Select if you
+	  want to capture from DBMD2 and/or to control it via mixer controls
+

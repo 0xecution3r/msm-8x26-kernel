@@ -1,0 +1,36 @@
+#
+# SoC audio configuration
+#
+
+config SND_SOC_DBMD2P3
+        bool "DSPG Voice Trigger/Enhancement Chip common driver v3"
+        default n
+
+config SND_SOC_DBMD2P3_UART
+        bool "DSPG Voice Trigger/Enhancement Chip uart driver v3"
+        depends on SND_SOC_DBMD2P3
+        default n
+        help
+          DBMD2P3 kernel driver for kernel v3.4
+
+config SND_SOC_DBMD2P3_SPI
+        bool "DSPG Voice Trigger/Enhancement Chip spi driver v3"
+        depends on SND_SOC_DBMD2P3
+        default n
+        help
+          DBMD2P3 kernel driver for kernel v3.4
+
+config SND_SOC_DBMD2P3_I2C
+        bool "DSPG Voice Trigger/Enhancement Chip i2c driver v3"
+        depends on SND_SOC_DBMD2P3
+        default n
+        help
+          DBMD2P3 kernel driver for kernel v3.4
+
+config SND_SOC_DBMD2P3_V34_PORT
+        bool "DSPG Voice Trigger/Enhancement Chip driver v3"
+        depends on SND_SOC_DBMD2P3
+        default n
+        help
+          DBMD2P3 kernel driver for kernel v3.4
+
